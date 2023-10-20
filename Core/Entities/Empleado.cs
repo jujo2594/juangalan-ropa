@@ -15,6 +15,6 @@ namespace Core.Entities
         public int IdMunicipioFK { get; set; }
         public Municipio Municipios { get; set; }
         public ICollection<Orden> Ordenes { get; set; }
-        public ICollection<DetalleVenta> DetalleVentas { get; set; }
+        public ICollection<Venta> Ventas { get; set; }
     }
 }
