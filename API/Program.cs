@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddDbContext<tiendaContext>(optionsBuilder =>
+builder.Services.AddDbContext<TiendaContext>(optionsBuilder =>
 {
     string connectionString = builder.Configuration.GetConnectionString("MySqlConex");
     optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));

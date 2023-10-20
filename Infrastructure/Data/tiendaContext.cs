@@ -10,7 +10,9 @@ namespace Infrastructure.Data
 {
     public class TiendaContext : DbContext
     {
-
+        public TiendaContext(DbContextOptions options) : base(options)
+        {
+        }
         public DbSet<Cargo> Cargos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Color> Colores { get; set; }
